@@ -1,4 +1,4 @@
-name: rappi-ml-challenge
+name: rappi-titanic_ml-challenge
 channels:
   - conda-forge
 dependencies:

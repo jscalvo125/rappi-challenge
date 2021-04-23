@@ -1,0 +1,28 @@
+[
+   {
+      "PassengerId":900,
+      "Name":"Jack Dawson",
+      "Sex":"male",
+      "Age":23,
+      "Cabin": "4C",
+      "Pclass":"3",
+      "Ticket":"124",
+      "SibSp":0,
+      "Parch":0,
+      "Fare":0,
+      "Embarked":"S"
+   },
+   {
+      "PassengerId":1000,
+      "Name":"Rose DeWiit Bukater",
+      "Sex":"female",
+      "Age":17,
+      "Cabin": "1A",
+      "Pclass":"1",
+      "Ticket":"AAA",
+      "SibSp":0,
+      "Parch":1,
+      "Fare":53.1,
+      "Embarked":"S"
+   }
+]
