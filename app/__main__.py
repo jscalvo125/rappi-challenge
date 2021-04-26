@@ -23,7 +23,8 @@ dictConfig({
 
 dirname = os.path.dirname(__file__)
 model_filename = os.path.join(dirname, "../models/gradient_clf.pkl")
-pred_wrapper = PredictionWrapper(model_filename)
+train_data_name = os.path.join(dirname, "../data/train.csv")
+pred_wrapper = PredictionWrapper(model_filename, train_data_name)
 app = Flask(__name__)
 if len(sys.argv) < 2:
     app.logger.info("No model selected, loading default model....")
@@ -72,4 +73,4 @@ def predict():
 
 
 get_profiling_info()
-app.run(host='0.0.0.0', port=8080, debug=True)
+app.run(host='0.0.0.0', port=80)

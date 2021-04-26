@@ -4,10 +4,10 @@ from sklearn.preprocessing import MinMaxScaler
 
 
 class PredictionWrapper:
-    def __init__(self, model_name: str):
+    def __init__(self, model_name: str, train_data_path: str):
         try:
             self.model = pickle.load(open(model_name, "rb"))
-            self.training_df = pd.read_csv("../data/train.csv")
+            self.training_df = pd.read_csv(train_data_path)
             self.training_df['FamilySize'] = self.training_df['Parch'] + self.training_df['SibSp']
             self.scaler = MinMaxScaler()
             features = ['Age', 'Fare', 'FamilySize']
