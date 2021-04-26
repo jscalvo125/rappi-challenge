@@ -1,7 +1,0 @@
-name: rappi-titanic_ml-challenge
-channels:
-  - conda-forge
-dependencies:
-  - python==3.8
-  - pip:
-      - -r requirements.txt
